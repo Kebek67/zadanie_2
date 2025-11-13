@@ -1,13 +1,87 @@
-<!DOCTYPE html> 
-<html lang="pl-PL"> 
-<html> 
-     <head> 
-             <meta charset="utf-8"> 
-             <title>Szwarc formularz</title> 
-     </head> 
-    <body> 
- Tutaj będzie formularz
-<A HREF="index.html"> Wróć </A> 
-    </body> 
+<!DOCTYPE html>
+	<html lang="pl-PL">
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<title> ZADANIE FORMULARZ </title>
+	</head>
+	<body bgcolor="#DDDDDD">
+		<center><h1>Formularz o Grach</h1></center>
+		<form enctype="text/plain" action="mailto:mkryniew@wp.pl" subject="formularz_dane" method="Post">
 
-  </html> 
+		<TABLE>
+		<TR height="100">
+		<TD width="500">
+		<b>Imię</b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input name="imie" size="22">
+		<br><br>
+		<b>Nazwisko </b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp <input name="nazwisko" size="22">
+		
+		<TD width="650">
+			<center><font size="5" color="blue"><b>Na jakiej platformie grasz w gry?</b></font></center><br>
+			<center> <select>
+			<option value="pc">komuter stacjonarny</option>
+			<option value="laptop">laptop</option>
+			<option value="ps">kosnsola sony</option>
+			<option value="xbox">konsola xbox</option>
+			<option value="nintendo">konsola nintendo</option>
+			</select> </center>
+		</TD>
+
+		<TD width="500"><left>Jakai jest twój ulubiony gatuek gier?</left>
+			<left><br><br>
+			<input type="checkbox" name="game_type" value="k"> FPS
+			<br><br>
+			<input type="checkbox" name="game_type" value="m"> RPG
+			<br><br>
+			<input type="checkbox" name="game-type" value="inna"> INNE
+			<br><br><br>
+			<nobr>Jeśli zaznaczyłeś/łaś INNE to podaj swój ulubiony<br>gatunek poniżej. Maks:
+			100znaków</nobr></left>
+			<br><br>
+			<input name="inna" size="25" maxlength="100">
+		</TD>
+		<TR>
+
+		<TR height="200">
+		<TD><nobr>Czy grasz w gry?</nobr>
+			<br><br>
+			<input type="radio" name="pyt3" value="tak"> Tak
+			<br><br>
+			<input type="radio" name="pyt3" value="nie"> Nie
+			<br><br>
+			<input type="radio" name="pyt3" value="czasem"> Czasem 
+		</TD>
+		
+		</TD>
+		<TD width="500">
+			<center>Jak dużo dziennie grasz w gry(około)?</center>
+			<center>
+			<br><br>
+			<input type="radio" name="how_much" value="nie gram"> nie gram
+			<br><br>
+			<input type="radio" name="how_much" value="<1h"> <1h
+			<br><br>
+			<input type="radio" name="how_much" value=">2h"> >2h
+			<br><br>
+			<input type="radio" name="how_much" value=">4h"> >4h
+			<br><br>
+			<input type="radio" name="how_much" value=">6h"> >6h
+			<br><br>
+			<input type="radio" name="how_much" value=">8h"> >8h
+			<br><br>
+			</center>
+		</TD>
+
+		<TD> Jak dobrze grasz w gry? <input type="range"> <br>
+		Proszę czekać...&nbsp &nbsp &nbsp &nbsp <progress>Proszę czekać...</progress> </TD>
+		</TR>
+
+		<TR height="100">
+			<TD><button onclick="alert('A kuku')" style="height:80px;width:300px">Przycisk
+			niespodzianka</button></TD>
+			<TD><nobr><input type="reset" value="Reset" style="height:80px; width:150px">
+			</TD>
+			<TD> <input type="submit" value"=Wyślij formularz" style="height:80px; width:150px"> </TD>
+		</TR>
+	</body>
+</html>
